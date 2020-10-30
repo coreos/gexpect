@@ -13,8 +13,8 @@ import (
 	"time"
 	"unicode/utf8"
 
+	"github.com/creack/pty"
 	shell "github.com/kballard/go-shellquote"
-	"github.com/kr/pty"
 )
 
 var (
@@ -387,7 +387,7 @@ func (expect *ExpectSubprocess) ReadUntil(delim byte) ([]byte, error) {
 		for i := 0; i < n; i++ {
 			if chunk[i] == delim {
 				if len(chunk) > i+1 {
-					expect.buf.PutBack(chunk[i+1:n])
+					expect.buf.PutBack(chunk[i+1 : n])
 				}
 				return join, nil
 			} else {

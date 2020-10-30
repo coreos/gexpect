@@ -59,6 +59,6 @@ See `gexpect_test.go` and the `examples` folder for full syntax
 
 ## Credits
 
-	github.com/kballard/go-shellquote	
-	github.com/kr/pty
+	github.com/creack/pty
+	github.com/kballard/go-shellquote
 	KMP Algorithm: "http://blog.databigbang.com/searching-for-substrings-in-streams-a-slight-modification-of-the-knuth-morris-pratt-algorithm-in-haxe/"
